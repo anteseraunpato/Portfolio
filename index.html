@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,13 +23,15 @@
             <img src="img/soyese.png" draggable="false" alt="soyese">
             <div class="aboutme">
                 <h1>👋 Hola, soy Jahir Medina</h1>
-                <p>Autodidacta del front-end y apasionado de la tecnología</p>
+                <p id="siteContent">Autodidacta de frontend y backend</p>
             </div>
             
         </section>
+
+        <!-- 2.Github -->
         <a href="https://github.com/anteseraunpato" target="_blank" class="grid2 effect transition-all">
             
-            <div class="link-icons">
+            <div class="link-icons spacebetween">
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
 
                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="opacity-50" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
@@ -38,28 +40,107 @@
             
             </div>
             <span class="description">
-                <span class="block font-semibold">GitHub</span>
-                <span class="block text-sm">Aquí subo mis proyectos y otros experimentos.</span>
+                <span id="gitContent">Aquí encuentras el código de mis proyectos y experimentos.</span>
                 </span>
             </a>
 
-        <a href="https://linkedin.com/in/jahirmedina" target="_blank" class="grid3 effect transition-all">
+            <!-- 3.Cambiar el idioma -->
+            <section class="grid3">
+        <div class="btn-language">
+    <button onclick="changeLanguage('eng')">Change to English</button>
+    <button onclick="changeLanguage('es')">Change to Spanish</button>
+        </div>
+
+            <!-- <a href="https://anteseraunpato.github.io/cuactype/" class="hide"></a> -->
+        </section>
+
+
+    <!-- 4.proyecto de portafolio -->
+        <section class="grid4">
             
-                <div class="link-icons">
-                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="opacity-50" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                    <img src="img/linkedin.png" alt="logo de linkedin">
+            <div class="link-icons spacebetween">
+<div class="end">
+                <svg width="24" height="24" viewBox="0,0,48,48" fill="#ffffff">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M43.33594,4h-36.66797c-1.47266,0 -2.66797,1.19531 -2.66797,2.66797v36.66406c0,1.47266 1.19531,2.66797 2.66797,2.66797h36.66406c1.47266,0 2.66797,-1.19531 2.66797,-2.66406v-36.66797c0,-1.47266 -1.19531,-2.66797 -2.66406,-2.66797zM27,36.18359c0,3.99609 -2.34375,5.81641 -5.76562,5.81641c-3.09375,0 -5.32422,-2.07422 -6.23437,-4l3.14453,-1.90234c0.60547,1.07422 1.52734,1.90234 2.85547,1.90234c1.26953,0 2,-0.49609 2,-2.42578v-12.57422h4zM35.67578,42c-3.54297,0 -5.55469,-1.78516 -6.67578,-4l3,-2c0.81641,1.33594 1.70703,2.61328 3.58984,2.61328c1.58203,0 2.41016,-0.78906 2.41016,-1.88281c0,-1.30469 -0.85937,-1.76953 -2.59766,-2.53125l-0.95312,-0.41016c-2.75391,-1.17187 -4.58594,-2.64062 -4.58594,-5.75c0,-2.85937 2.18359,-5.03906 5.58984,-5.03906c2.42578,0 4.16797,0.84375 5.42578,3.05469l-2.96875,1.91016c-0.65625,-1.17578 -1.35937,-1.63672 -2.45703,-1.63672c-1.11719,0 -1.82422,0.71094 -1.82422,1.63672c0,1.14453 0.70703,1.60547 2.34375,2.31641l0.95313,0.41016c3.24609,1.38672 5.07422,2.80469 5.07422,5.99219c0,3.43359 -2.69922,5.31641 -6.32422,5.31641z"></path></g>
+                    </svg>
+                    
+                    <svg width="24" height="24" viewBox="0,0,27.85,27.85">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M5.21875,4l0.09375,1.09375l1.75,19.78125l0.0625,0.6875l0.65625,0.1875l7.9375,2.21875l0.25,0.0625l0.28125,-0.0625l7.9375,-2.1875l0.65625,-0.1875l0.0625,-0.6875l1.78125,-19.8125l0.09375,-1.0625h-1.09375l-19.375,-0.03125zM7.40625,6l17.1875,0.03125l-1.625,18l-6.96875,1.9375l-7,-1.9375zM9.8125,9l0.65625,7.46875h8.5625l-0.28125,3.21875l-2.75,0.75h-0.03125l-2.75,-0.75l-0.15625,-2.0625h-2.5l0.34375,3.96875l5.0625,1.40625h0.03125l5.0625,-1.40625l0.6875,-7.59375h-9.03125l-0.21875,-2.53125h9.46875l0.21875,-2.46875z"></path></g></g>
+                        </svg>
+                <svg width="24" height="24" viewBox="0 0 48 48"  fill="currentColor">
+                        <path d="M24,46,8.3,41.7,5,4H43L39.7,41.7ZM12,38.6l12,3.3,12-3.3L38.6,8H9.4Z"/>
+                        <path d="M14,13H34L32.2,34.3,23.9,37l-8.4-2.1-.9-7.2h4.5v3.6l4.8.9,4.4-.9V25.9H14.6l-.3-4.5a2.3,2.3,0,0,1,1.5-.6c6.9,0,12.5.6,12.5.6V17.8H14.6Z"/>
+                </svg>
+            </div>
+                <svg  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg>
+                
+                
+            
+            </div>
+
+            <a href="https://anteseraunpato.github.io/cuactype/" class="hide"><span>ver cuactype</span></a></section>
+        
+        <!-- 5.Proyecto -->
+        <section class="grid5">
+
+                        
+            <div class="link-icons spacebetween">
+
+                <div class="end">
+                    <svg width="24" height="24" viewBox="0,0,48,48" fill="#ffffff">
+                        <path d="M43.33594,4h-36.66797c-1.47266,0 -2.66797,1.19531 -2.66797,2.66797v36.66406c0,1.47266 1.19531,2.66797 2.66797,2.66797h36.66406c1.47266,0 2.66797,-1.19531 2.66797,-2.66406v-36.66797c0,-1.47266 -1.19531,-2.66797 -2.66406,-2.66797zM27,36.18359c0,3.99609 -2.34375,5.81641 -5.76562,5.81641c-3.09375,0 -5.32422,-2.07422 -6.23437,-4l3.14453,-1.90234c0.60547,1.07422 1.52734,1.90234 2.85547,1.90234c1.26953,0 2,-0.49609 2,-2.42578v-12.57422h4zM35.67578,42c-3.54297,0 -5.55469,-1.78516 -6.67578,-4l3,-2c0.81641,1.33594 1.70703,2.61328 3.58984,2.61328c1.58203,0 2.41016,-0.78906 2.41016,-1.88281c0,-1.30469 -0.85937,-1.76953 -2.59766,-2.53125l-0.95312,-0.41016c-2.75391,-1.17187 -4.58594,-2.64062 -4.58594,-5.75c0,-2.85937 2.18359,-5.03906 5.58984,-5.03906c2.42578,0 4.16797,0.84375 5.42578,3.05469l-2.96875,1.91016c-0.65625,-1.17578 -1.35937,-1.63672 -2.45703,-1.63672c-1.11719,0 -1.82422,0.71094 -1.82422,1.63672c0,1.14453 0.70703,1.60547 2.34375,2.31641l0.95313,0.41016c3.24609,1.38672 5.07422,2.80469 5.07422,5.99219c0,3.43359 -2.69922,5.31641 -6.32422,5.31641z"></path>
+                        </svg>
+                        
+                        <svg width="24" height="24" viewBox="0,0,48,48" fill="#ffffff">
+                            <path d="M40.814,7.171l-2.704,31.549c-0.067,0.78 -0.583,1.449 -1.32,1.713l-11.781,4.207c-0.652,0.233 -1.366,0.233 -2.018,0l-11.781,-4.208c-0.737,-0.263 -1.253,-0.933 -1.32,-1.713l-2.704,-31.548c-0.1,-1.168 0.821,-2.171 1.993,-2.171h29.642c1.172,0 2.093,1.003 1.993,2.171zM35,12h-21.99l1.16,13h15.74l-0.57,6.48l-5.34,1.27l-5.33,-1.26l-0.3,-3.49h-4.01l0.57,6.71l9.07,2.14l9.06,-2.14l1.23,-13.71h-16.46l-0.44,-5h17.31z"></path>
+                            </svg>
+                    <svg width="24" height="24" viewBox="0 0 48 48"  fill="#ffffff">
+                            <path d="M24,46,8.3,41.7,5,4H43L39.7,41.7ZM12,38.6l12,3.3,12-3.3L38.6,8H9.4Z"/>
+                            <path d="M14,13H34L32.2,34.3,23.9,37l-8.4-2.1-.9-7.2h4.5v3.6l4.8.9,4.4-.9V25.9H14.6l-.3-4.5a2.3,2.3,0,0,1,1.5-.6c6.9,0,12.5.6,12.5.6V17.8H14.6Z"/>
+                    </svg>
                 </div>
 
+                <svg  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg>
                 
-    </a>
-        <section class="grid4"><a href="#"><span>ver proyecto</span></a></section>
-        <section class="grid5"><span>Contact me</span> <a href="mailto:jahirtunmedina@gmail.com"></a></section>
-        <section class="grid6">6</section>
-        <section class="grid7">7</section>
-        <section class="grid8">8</section>
+                
+            
+            </div>
+
+            <a href="https://anteseraunpato.github.io/cuactype/" class="hide"><span>ver encriptador</span>
+            </a>
+        </section>
+
+        <!-- 6.linkedin -->
+        <a href="https://linkedin.com/in/jahirmedina" target="_blank" class="grid6 effect transition-all">
+            
+            <div class="link-icons spacebetween">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="opacity-50" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                <img src="img/linkedin.png" alt="logo de linkedin">
+            </div>
+
+            
+</a>
+<!-- 7.Proyecto -->
+        <section class="grid7">
+            <div class="link-icons end">
+                <svg  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg>
+                
+                
+            
+            </div>
+
+            <a href="https://anteseraunpato.github.io/cuactype/" class="hide"><span>ver proyecto</span>
+            </a>
+        </section>
+
+        <!-- 8.Status discord-->
+        <section class="grid8"><div class="discord-container"></div><span id="discord-status"></span> </section>
+        <!-- 9-Algun otro enlace -->
         <section class="grid9">9</section>
     </main>
     <footer><div class="credits" style="text-align: center; padding:10px 0;">&copy; <script>
         var d = new Date();document.write(d.getFullYear());</script> by Jahir</div></footer>
 </body>
+
+<script src="main.js" type="module"></script>
 </html>

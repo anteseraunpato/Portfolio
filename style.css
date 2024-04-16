@@ -9,6 +9,21 @@ body {
     min-height: 100dvh;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cccccc40;
+    border-radius: 4px;
+}
+
 p {
     text-wrap: pretty;
 }
@@ -24,10 +39,11 @@ transition-timing-function: cubic-bezier(.4,0,.2,1);
     width: 100%;
     height: 100vh;
     content: "";
-    opacity: .15;
+    opacity: .1;
     z-index: 1000;
     pointer-events: none;
     background-image: url(img/grain.gif);
+    background-size: contain ;
 }
 
 main {
@@ -155,6 +171,10 @@ box-sizing: border-box;
     background-size: cover;
     z-index: 1;
 }
+.grid2 span {
+    font-size: .85rem;
+    font-weight: 500;
+}
 .grid2::after {
     content:"";
     position:absolute;
@@ -168,7 +188,6 @@ box-sizing: border-box;
 }
 
 .link-icons {
-    justify-content: space-between;
     display: flex;
     padding-left: 1.5rem;
     padding-right: 1.5rem; 
@@ -177,7 +196,27 @@ box-sizing: border-box;
     line-height: 2.25rem;
 }
 
-.effect .description {
+.spacebetween {
+    justify-content: space-between;
+}
+
+.end {
+    justify-content: flex-end;
+}
+
+.description .effect{
+    display: block;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+    padding-bottom: 1.5rem; 
+    margin-top: 0.125rem;
+    font-size: 1rem;
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.description {
     display: block;
     padding-left: 1.5rem;
     padding-right: 1.5rem; 
@@ -191,7 +230,7 @@ box-sizing: border-box;
 }
 
 .semibold {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .small {
@@ -216,16 +255,16 @@ box-sizing: border-box;
     transform: scale(.9);
     transition: .3s all;
 }
-
+/* notocar */
 .grid3 {
     grid-column:4/6 ;
     color: white;
-    background-color: #0077b5;
+    background: url(img/bobs.png);
     position: relative;
     transition: .5s all;
 }
 
-.grid3 img {
+.grid6 img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -233,7 +272,7 @@ box-sizing: border-box;
     width: 72px;
 }
 
-.grid3 .link-icons {
+.grid6 .link-icons {
     display: flex;
     justify-content:flex-end;
 }
@@ -243,11 +282,11 @@ box-sizing: border-box;
     grid-row: 3/5;
     overflow: hidden;
     position: relative;
-    background:url(img/bobs.png);
+    background:url(img/cuac.gif);
     background-size: contain;
 }
 
-.grid4 a, .grid5 a {
+.grid4 a, .grid3 a, .grid5 a, .grid7 a {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.25px;
@@ -275,7 +314,7 @@ box-sizing: border-box;
     animation: ease-in-out;
 }
 
-.grid4 a:hover {
+.grid4 a:hover, .grid5 a:hover, .grid7 a:hover  {
     width: auto;
     transition: all 5s ease-in-out .2;
     box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px, rgba(255, 255, 255, 0.3) 0px 0px 0px 6px;
@@ -284,7 +323,7 @@ box-sizing: border-box;
     animation: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.grid5 a:hover {
+.grid3 a:hover {
     transition: all 5s ease-in-out .2;
     box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px, rgba(255, 255, 255, 0.3) 0px 0px 0px 6px;
     /* box-shadow 1s ease-out 0s */
@@ -293,7 +332,7 @@ box-sizing: border-box;
 }
 
 
-.grid4 a::before, .grid5 a::before {
+.grid4 a::before, .grid3 a::before, .grid5 a::before, .grid7 a::before {
     content: "";
     position: absolute;
     right: 1em;
@@ -304,7 +343,7 @@ box-sizing: border-box;
     transform: rotate(45deg);
     transition: all .4s;
 }
-.grid4:hover a::before {
+.grid4:hover a::before, .grid5:hover a::before, .grid7:hover a::before  {
     content: "";
     right: 1em;
     transition: all .4s;
@@ -312,7 +351,7 @@ box-sizing: border-box;
 }
 
 
-.grid4 a span {
+.grid4 a span, .grid5 a span, .grid7 a span {
     margin: 0px 36px 0px 16px;
     visibility: hidden;
     opacity: 0;
@@ -322,7 +361,7 @@ box-sizing: border-box;
     animation: ease-in-out;
 }
 
-.grid4 a:hover span {
+.grid4 a:hover span, .grid5 a:hover span, .grid7 a:hover span {
     visibility: visible;
     opacity: 1;
     transform: translateX(-2px);
@@ -332,16 +371,31 @@ box-sizing: border-box;
     transition-delay: 0.05s all;
 }
 
+/* notocar */
 .grid5 {
     grid-column: 3/6;
     grid-row: 3/5;
-    background: url(img/bobs.png);
-    /* background: url(img/pixel.gif); */
     position: relative;
     text-decoration: none;
+    background: url('img/encriptador.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
 }
 
-.grid5 span {
+.grid5::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:1rem;
+    background:linear-gradient(#3d59ab, transparent 35%);
+    z-index:-1;
+}
+
+.grid3 span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -354,9 +408,33 @@ box-sizing: border-box;
     transition: all .3s;
 }
 
+.grid3 .btn-language{
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid3 button {
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 5px;
+    transition: scale .3s ease-in-out;
+}
+
+.grid3 button:hover {
+    scale: .9;
+    transition: scale .3s ease-in-out;
+}
+
+/* notocar */
 .grid6 {
     grid-row: 5/7;
     grid-column: 1/2;
+    background-color: #0077b5;
+    color: white;
 }
 
 .grid7 {
@@ -366,7 +444,50 @@ box-sizing: border-box;
 
 .grid8 {
 grid-column: 4/6;
+background: url('img/discord.png') no-repeat center left;
+background-size: 130px;
+
+z-index: 1;
 }
+
+/* .grid8:hover {
+    background: url(img/discordanim.webp) center right;
+} */
+
+.grid8 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    color: #5865F2;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.discord-container{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        border-radius:1rem;
+        background:white;
+        opacity: .65;
+        z-index:-1;
+        transition: opacity .2s ease-in-out;
+    }
+
+.active {
+    box-shadow: 0 0 10px #57F287;
+    transition: ball 0.2s ease-in-out;
+}
+
+/* .discord-container:hover {
+    opacity: .1;
+    transition: opacity .3s ease-in-out;
+} */
 
 .grid9 {
     grid-column: 4/6;
