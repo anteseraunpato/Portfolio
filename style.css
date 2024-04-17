@@ -545,7 +545,7 @@ z-index: 1;
   
   .grid5 {
     grid-column: 1/3;
-    grid-row: 6/8; Ocupar 2 filas */
+    grid-row: 6/8; /*Ocupar 2 filas */
   }
   
   .grid6 {
