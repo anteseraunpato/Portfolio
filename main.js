@@ -1,4 +1,3 @@
-
 //Mostrar si estoy online
 async function updateDiscordStatus() {
         try {

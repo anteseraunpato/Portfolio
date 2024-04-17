@@ -22,8 +22,10 @@
                 
             <img src="img/soyese.png" draggable="false" alt="soyese">
             <div class="aboutme">
-                <h1>👋 Hola, soy Jahir Medina</h1>
-                <p id="siteContent">Autodidacta de frontend y backend</p>
+                <h1 id="welcome">👋 Hola, soy Jahir Medina</h1>
+                <div id="aboutme">
+                    <p>Desarrollador frontend autodidacta. Soy bueno con <b>HTML, CSS y JavaScript</b>.</p> <p>Me fascina aprender cosas nuevas y resolver problemas.</p>
+                </div>
             </div>
             
         </section>
@@ -40,16 +42,16 @@
             
             </div>
             <span class="description">
-                <span id="gitContent">Aquí encuentras el código de mis proyectos y experimentos.</span>
+                <span id="github">Aquí encuentras el código de mis proyectos y experimentos.</span>
                 </span>
             </a>
 
             <!-- 3.Cambiar el idioma -->
             <section class="grid3">
-        <div class="btn-language">
-    <button onclick="changeLanguage('eng')">Change to English</button>
-    <button onclick="changeLanguage('es')">Change to Spanish</button>
-        </div>
+                <div class="btn-language">
+                   <button onclick = "swithcLang('en')"> English </button>
+                   <button onclick = "swithcLang('es')"> Español </button>
+                </div>
 
             <!-- <a href="https://anteseraunpato.github.io/cuactype/" class="hide"></a> -->
         </section>
@@ -78,7 +80,7 @@
             
             </div>
 
-            <a href="https://anteseraunpato.github.io/cuactype/" class="hide"><span>ver cuactype</span></a></section>
+            <a href="https://anteseraunpato.github.io/cuactype/" class="hide"><span id="cuaclink">ver cuactype</span></a></section>
         
         <!-- 5.Proyecto -->
         <section class="grid5">
@@ -106,7 +108,7 @@
             
             </div>
 
-            <a href="https://anteseraunpato.github.io/cuactype/" class="hide"><span>ver encriptador</span>
+            <a href="https://anteseraunpato.github.io/cuactype/" class="hide"><span id="encriplink" >ver encriptador</span>
             </a>
         </section>
 
@@ -143,4 +145,5 @@
 </body>
 
 <script src="main.js" type="module"></script>
+<script src="language.js"></script>
 </html>
