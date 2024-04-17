@@ -283,7 +283,9 @@ box-sizing: border-box;
     overflow: hidden;
     position: relative;
     background:url(img/cuac.gif);
-    background-size: contain;
+
+    background-size: cover;
+    background-position: center;
 }
 
 .grid4 a, .grid3 a, .grid5 a, .grid7 a {
@@ -424,10 +426,15 @@ box-sizing: border-box;
     transition: scale .3s ease-in-out;
 }
 
-.grid3 button:hover {
-    scale: .9;
-    transition: scale .3s ease-in-out;
-}
+
+
+@media (hover: none) {
+    /* Cambia el color de fondo cuando se presiona en dispositivos móviles */
+    .grid3 button:hover {
+        scale: .9;
+        transition: scale .3s ease-in-out;
+    }
+  }
 
 /* notocar */
 .grid6 {
@@ -492,3 +499,5 @@ z-index: 1;
 .grid9 {
     grid-column: 4/6;
 }
+
+
